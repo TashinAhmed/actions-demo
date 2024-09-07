@@ -15,7 +15,7 @@ jobs:
         PAYLOAD: ${{ toJSON(github.event) }}
 
     - name: execute a github script
-      uses: actions/github-script@7.0.1
+      uses: actions/github-script@3
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
